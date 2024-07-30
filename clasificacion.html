@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Instrumentos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://images.unsplash.com/photo-1579614017560-3e3769ac2b39');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow-x: hidden;
+            animation: bgMove 40s linear infinite alternate;
+        }
+
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 42px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            animation: slideInDown 1s ease;
+        }
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            font-size: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease;
+        }
+        .container {
+            max-width: 1200px; /* Ajuste del ancho máximo del contenedor */
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .category {
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            animation: slideIn 1s ease;
+            width: 30%; /* Ajuste del ancho de las categorías */
+        }
+        @keyframes slideIn {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        table {
+            width: 100%; /* Ajuste del ancho de la tabla */
+            border-collapse: collapse;
+            animation: slideIn 1s ease;
+        }
+        th, td {
+            padding: 20px 15px; /* Ajuste de padding */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 18px;
+        }
+        th {
+            background-color: #555;
+            font-weight: bold;
+            color: #fff;
+        }
+        td {
+            color: #666;
+        }
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+        .instrument {
+            font-weight: bold;
+            color: #333;
+        }
+        img {
+            max-width: 100px; /* Ajuste del tamaño de la imagen */
+            max-height: 100px; /* Ajuste del tamaño de la imagen */
+            margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            object-fit: cover;
+            cursor: pointer; /* Cambiar cursor al pasar sobre la imagen */
+            animation: float 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clasificación de Instrumentos</h1>
+    </header>
+
+    <div class="container">
+        <div class="category">
+            <h2 style="color: #FF5733;">Instrumentos de Cuerda</h2>
+            <table>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><img src="https://www.kissu.com.ec/imagenes//productos/lg/16578398620.jpg" alt="Guitarra"></td>
+                    <td class="instrument">Guitarra</td>
+                    <td>Instrumento de cuerda pulsada.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://camemusic.com/wp-content/uploads/2014/09/VIOLIN-4-4-OK.jpg" alt="Violín"></td>
+                    <td class="instrument">Violín</td>
+                    <td>Instrumento de cuerda frotada.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdnx.jumpseller.com/instruments/image/43075206/resize/635/635?1715437279" alt="Piano"></td>
+                    <td class="instrument">Piano</td>
+                    <td>Instrumento de cuerda percutida.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.shutterstock.com/image-photo/cello-isolated-on-wihte-600nw-525282064.jpg" alt="Cello"></td>
+                    <td class="instrument">Cello</td>
+                    <td>Instrumento de cuerda frotada.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.bamboomusica.com/wp-content/uploads/2021/05/Ukelele-Bamboo-Kailua-3.jpg" alt="Ukelele"></td>
+                    <td class="instrument">Ukelele</td>
+                    <td>Instrumento de cuerda pulsada.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2 style="color: #FFC300;">Instrumentos de Viento</h2>
+            <table>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/61yanm9nu4L._AC_UF894,1000_QL80_DpWeblab_.jpg" alt="Flauta"></td>
+                    <td class="instrument">Flauta</td>
+                    <td>Instrumento de viento metal.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.dearmonia.com/16438-home_default/trompeta-fides-primera.jpg" alt="Trompeta"></td>
+                    <td class="instrument">Trompeta</td>
+                    <td>Instrumento de viento metal.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://yamaha.vtexassets.com/arquivos/ids/155889-800-auto?v=637780442919500000&width=800&height=auto&aspect=true" alt="Clarinete"></td>
+                    <td class="instrument">Clarinete</td>
+                    <td>Instrumento de viento metal.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/41b56aab-88cf-4575-96a5-742c24cb6f20.bc76dc2852a047af49eea9da8977f4f7.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Oboe"></td>
+                    <td class="instrument">Oboe</td>
+                    <td>Instrumento de viento metal.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://almacenpajaroazul.com/img/p/2/3/2/5/2325-large_default.jpg" alt="Saxofón"></td>
+                    <td class="instrument">Saxofón</td>
+                    <td>Instrumento de viento metal.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="category">
+            <h2 style="color: #33FFFC;">Instrumentos de Percusión</h2>
+            <table>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><img src="https://http2.mlstatic.com/D_NQ_NP_821150-MPE72728087539_112023-O.webp" alt="Batería"></td>
+                    <td class="instrument">Batería</td>
+                    <td>Conjunto de instrumentos de percusión.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.gonher.com/wp-content/uploads/GrupoGonher/IPNEWLT256C.jpg" alt="Timbales"></td>
+                    <td class="instrument">Timbales</td>
+                    <td>Instrumentos de percusión afinados.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://www.domisolhonduras.com/wp-content/uploads/2020/07/29-a-1.jpg" alt="Congas"></td>
+                    <td class="instrument">Congas</td>
+                    <td>Instrumentos de percusión de origen afrocubano.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://almacenpajaroazul.com/img/p/1/1/0/4/1104-large_default.jpg" alt="Tambor"></td>
+                    <td class="instrument">Tambor</td>
+                    <td>Instrumento de percusión.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/61cvFQVfTyL.jpg" alt="Maracas"></td>
+                    <td class="instrument">Maracas</td>
+                    <td>Instrumentos de percusión.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

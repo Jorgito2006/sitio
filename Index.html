@@ -1,0 +1,1350 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATIDEIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Agrega un fondo semitransparente al encabezado */
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-container input[type=text] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-container button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 40%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LATIDEIN</h1>
+        <nav>
+            <ul>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="clasificacion.html">Clasificacion</a></li>
+                <li><a href="Marcas.html">Marcas</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="Combos.html">Combos</a></li>
+                <li><a href="metodos.html">Metodos</a></li>
+                <li><a href="consultas.html">Consultas</a></li>
+                <li><a href="registrate.html">Registrate</a></li>
+                <!-- Agrega más enlaces según necesites -->
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+    </header>
+ 
+<P><CENTER>Te ofrecemos todo lo que necesites en instrumentos con  las marcas de mejor calidad
+en el mundo de la musica</CENTER></P>
+
+    <div class="gallery">
+     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con texto</title>
+  <style>
+    .container {
+      text-align: center; /* Para centrar el contenido */
+    }
+    .container img {
+      display: block; /* Para que la imagen ocupe todo el ancho disponible */
+      margin: 0 auto; /* Para centrar la imagen */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_15/154486/2337743_800.jpg" alt="Piano">
+  <p>21,700 Lps.</p>
+
+ <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el botón de compra */
+        .boton-compra {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-compra:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type=text], input[type=email], select {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los iconos */
+        .icono {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botón de compra -->
+<button class="boton-compra" onclick="mostrarModal()">Comprar</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2>Formas de Pago</h2>
+        <form id="paymentForm" onsubmit="return validarFormulario()">
+            <label for="formaPago">Selecciona una forma de pago:</label>
+            <select id="formaPago" name="formaPago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+
+            <!-- Campos de datos según la forma de pago seleccionada -->
+            <div id="datosTarjeta" style="display: none;">
+                <label for="numeroTarjeta"><i class="fas fa-credit-card icono"></i>Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+
+                <label for="nombreTitular"><i class="fas fa-user icono"></i>Nombre del Titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" placeholder="Nombre en la tarjeta">
+
+                <label for="fechaExpiracion"><i class="far fa-calendar-alt icono"></i>Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+
+                <label for="codigoSeguridad"><i class="fas fa-lock icono"></i>Código de Seguridad:</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="CVC">
+            </div>
+
+            <div id="datosPayPal" style="display: none;">
+                <label for="correoPayPal"><i class="fab fa-paypal icono"></i>Correo Electrónico PayPal:</label>
+                <input type="email" id="correoPayPal" name="correoPayPal" placeholder="Ingrese su correo de PayPal">
+            </div>
+
+            <div id="datosTransferencia" style="display: none;">
+                <label for="numeroCuenta"><i class="fas fa-university icono"></i>Número de Cuenta:</label>
+                <input type="text" id="numeroCuenta" name="numeroCuenta" placeholder="Ingrese el número de cuenta">
+            </div>
+
+            <input type="submit" value="Pagar">
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script>
+    // Mostrar modal
+    function mostrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Cerrar modal
+    function cerrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Mostrar campos de acuerdo a la forma de pago seleccionada
+    document.getElementById('formaPago').addEventListener('change', function() {
+        var formaPago = this.value;
+        var campos = document.querySelectorAll('#datosTarjeta, #datosPayPal, #datosTransferencia');
+
+        campos.forEach(function(campo) {
+            campo.style.display = 'none';
+        });
+
+        if (formaPago === 'tarjeta') {
+            document.getElementById('datosTarjeta').style.display = 'block';
+        } else if (formaPago === 'paypal') {
+            document.getElementById('datosPayPal').style.display = 'block';
+        } else if (formaPago === 'transferencia') {
+            document.getElementById('datosTransferencia').style.display = 'block';
+        }
+    });
+
+    // Validar formulario antes de enviar
+    function validarFormulario() {
+        var formaPago = document.getElementById('formaPago').value;
+
+        if (formaPago === 'tarjeta') {
+            var numeroTarjeta = document.getElementById('numeroTarjeta').value;
+            var nombreTitular = document.getElementById('nombreTitular').value;
+            var fechaExpiracion = document.getElementById('fechaExpiracion').value;
+            var codigoSeguridad = document.getElementById('codigoSeguridad').value;
+
+            if (numeroTarjeta.trim() === '' || nombreTitular.trim() === '' || fechaExpiracion.trim() === '' || codigoSeguridad.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+                return false;
+            }
+        } else if (formaPago === 'paypal') {
+            var correoPayPal = document.getElementById('correoPayPal').value;
+
+            if (correoPayPal.trim() === '') {
+                alert('Por favor, ingrese su correo electrónico de PayPal.');
+                return false;
+            }
+        } else if (formaPago === 'transferencia') {
+            var numeroCuenta = document.getElementById('numeroCuenta').value;
+
+            if (numeroCuenta.trim() === '') {
+                alert('Por favor, ingrese el número de cuenta para la transferencia.');
+                return false;
+            }
+        }
+
+        alert('¡Pago realizado con éxito!');
+        cerrarModal();
+        return false;
+    }
+</script>
+</div>
+
+
+
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con texto</title>
+  <style>
+    .container {
+      text-align: center; /* Para centrar el contenido */
+    }
+    .container img {
+      display: block; /* Para que la imagen ocupe todo el ancho disponible */
+      margin: 0 auto; /* Para centrar la imagen */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://musicbox.com.co/wp-content/uploads/2022/06/6001593-Guitarra-electrica-stratocaster-I60-LAST-32-Rojo-A.jpg" alt="Piano">
+  <p>7,200 Lps.</p>
+
+ <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el botón de compra */
+        .boton-compra {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-compra:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type=text], input[type=email], select {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los iconos */
+        .icono {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botón de compra -->
+<button class="boton-compra" onclick="mostrarModal()">Comprar</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2>Formas de Pago</h2>
+        <form id="paymentForm" onsubmit="return validarFormulario()">
+            <label for="formaPago">Selecciona una forma de pago:</label>
+            <select id="formaPago" name="formaPago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+
+            <!-- Campos de datos según la forma de pago seleccionada -->
+            <div id="datosTarjeta" style="display: none;">
+                <label for="numeroTarjeta"><i class="fas fa-credit-card icono"></i>Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+
+                <label for="nombreTitular"><i class="fas fa-user icono"></i>Nombre del Titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" placeholder="Nombre en la tarjeta">
+
+                <label for="fechaExpiracion"><i class="far fa-calendar-alt icono"></i>Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+
+                <label for="codigoSeguridad"><i class="fas fa-lock icono"></i>Código de Seguridad:</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="CVC">
+            </div>
+
+            <div id="datosPayPal" style="display: none;">
+                <label for="correoPayPal"><i class="fab fa-paypal icono"></i>Correo Electrónico PayPal:</label>
+                <input type="email" id="correoPayPal" name="correoPayPal" placeholder="Ingrese su correo de PayPal">
+            </div>
+
+            <div id="datosTransferencia" style="display: none;">
+                <label for="numeroCuenta"><i class="fas fa-university icono"></i>Número de Cuenta:</label>
+                <input type="text" id="numeroCuenta" name="numeroCuenta" placeholder="Ingrese el número de cuenta">
+            </div>
+
+            <input type="submit" value="Pagar">
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script>
+    // Mostrar modal
+    function mostrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Cerrar modal
+    function cerrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Mostrar campos de acuerdo a la forma de pago seleccionada
+    document.getElementById('formaPago').addEventListener('change', function() {
+        var formaPago = this.value;
+        var campos = document.querySelectorAll('#datosTarjeta, #datosPayPal, #datosTransferencia');
+
+        campos.forEach(function(campo) {
+            campo.style.display = 'none';
+        });
+
+        if (formaPago === 'tarjeta') {
+            document.getElementById('datosTarjeta').style.display = 'block';
+        } else if (formaPago === 'paypal') {
+            document.getElementById('datosPayPal').style.display = 'block';
+        } else if (formaPago === 'transferencia') {
+            document.getElementById('datosTransferencia').style.display = 'block';
+        }
+    });
+
+    // Validar formulario antes de enviar
+    function validarFormulario() {
+        var formaPago = document.getElementById('formaPago').value;
+
+        if (formaPago === 'tarjeta') {
+            var numeroTarjeta = document.getElementById('numeroTarjeta').value;
+            var nombreTitular = document.getElementById('nombreTitular').value;
+            var fechaExpiracion = document.getElementById('fechaExpiracion').value;
+            var codigoSeguridad = document.getElementById('codigoSeguridad').value;
+
+            if (numeroTarjeta.trim() === '' || nombreTitular.trim() === '' || fechaExpiracion.trim() === '' || codigoSeguridad.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+                return false;
+            }
+        } else if (formaPago === 'paypal') {
+            var correoPayPal = document.getElementById('correoPayPal').value;
+
+            if (correoPayPal.trim() === '') {
+                alert('Por favor, ingrese su correo electrónico de PayPal.');
+                return false;
+            }
+        } else if (formaPago === 'transferencia') {
+            var numeroCuenta = document.getElementById('numeroCuenta').value;
+
+            if (numeroCuenta.trim() === '') {
+                alert('Por favor, ingrese el número de cuenta para la transferencia.');
+                return false;
+            }
+        }
+
+        alert('¡Pago realizado con éxito!');
+        cerrarModal();
+        return false;
+    }
+</script>
+</div>
+
+
+
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con texto</title>
+  <style>
+    .container {
+      text-align: center; /* Para centrar el contenido */
+    }
+    .container img {
+      display: block; /* Para que la imagen ocupe todo el ancho disponible */
+      margin: 0 auto; /* Para centrar la imagen */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png" alt="Piano">
+  <p>6,800 Lps.</p>
+
+ <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el botón de compra */
+        .boton-compra {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-compra:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type=text], input[type=email], select {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los iconos */
+        .icono {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botón de compra -->
+<button class="boton-compra" onclick="mostrarModal()">Comprar</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2>Formas de Pago</h2>
+        <form id="paymentForm" onsubmit="return validarFormulario()">
+            <label for="formaPago">Selecciona una forma de pago:</label>
+            <select id="formaPago" name="formaPago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+
+            <!-- Campos de datos según la forma de pago seleccionada -->
+            <div id="datosTarjeta" style="display: none;">
+                <label for="numeroTarjeta"><i class="fas fa-credit-card icono"></i>Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+
+                <label for="nombreTitular"><i class="fas fa-user icono"></i>Nombre del Titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" placeholder="Nombre en la tarjeta">
+
+                <label for="fechaExpiracion"><i class="far fa-calendar-alt icono"></i>Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+
+                <label for="codigoSeguridad"><i class="fas fa-lock icono"></i>Código de Seguridad:</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="CVC">
+            </div>
+
+            <div id="datosPayPal" style="display: none;">
+                <label for="correoPayPal"><i class="fab fa-paypal icono"></i>Correo Electrónico PayPal:</label>
+                <input type="email" id="correoPayPal" name="correoPayPal" placeholder="Ingrese su correo de PayPal">
+            </div>
+
+            <div id="datosTransferencia" style="display: none;">
+                <label for="numeroCuenta"><i class="fas fa-university icono"></i>Número de Cuenta:</label>
+                <input type="text" id="numeroCuenta" name="numeroCuenta" placeholder="Ingrese el número de cuenta">
+            </div>
+
+            <input type="submit" value="Pagar">
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script>
+    // Mostrar modal
+    function mostrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Cerrar modal
+    function cerrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Mostrar campos de acuerdo a la forma de pago seleccionada
+    document.getElementById('formaPago').addEventListener('change', function() {
+        var formaPago = this.value;
+        var campos = document.querySelectorAll('#datosTarjeta, #datosPayPal, #datosTransferencia');
+
+        campos.forEach(function(campo) {
+            campo.style.display = 'none';
+        });
+
+        if (formaPago === 'tarjeta') {
+            document.getElementById('datosTarjeta').style.display = 'block';
+        } else if (formaPago === 'paypal') {
+            document.getElementById('datosPayPal').style.display = 'block';
+        } else if (formaPago === 'transferencia') {
+            document.getElementById('datosTransferencia').style.display = 'block';
+        }
+    });
+
+    // Validar formulario antes de enviar
+    function validarFormulario() {
+        var formaPago = document.getElementById('formaPago').value;
+
+        if (formaPago === 'tarjeta') {
+            var numeroTarjeta = document.getElementById('numeroTarjeta').value;
+            var nombreTitular = document.getElementById('nombreTitular').value;
+            var fechaExpiracion = document.getElementById('fechaExpiracion').value;
+            var codigoSeguridad = document.getElementById('codigoSeguridad').value;
+
+            if (numeroTarjeta.trim() === '' || nombreTitular.trim() === '' || fechaExpiracion.trim() === '' || codigoSeguridad.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+                return false;
+            }
+        } else if (formaPago === 'paypal') {
+            var correoPayPal = document.getElementById('correoPayPal').value;
+
+            if (correoPayPal.trim() === '') {
+                alert('Por favor, ingrese su correo electrónico de PayPal.');
+                return false;
+            }
+        } else if (formaPago === 'transferencia') {
+            var numeroCuenta = document.getElementById('numeroCuenta').value;
+
+            if (numeroCuenta.trim() === '') {
+                alert('Por favor, ingrese el número de cuenta para la transferencia.');
+                return false;
+            }
+        }
+
+        alert('¡Pago realizado con éxito!');
+        cerrarModal();
+        return false;
+    }
+</script>
+</div>
+
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con texto</title>
+  <style>
+    .container {
+      text-align: center; /* Para centrar el contenido */
+    }
+    .container img {
+      display: block; /* Para que la imagen ocupe todo el ancho disponible */
+      margin: 0 auto; /* Para centrar la imagen */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://almacenpajaroazul.com/img/p/9/8/7/987-large_default.jpg" alt="Piano">
+  <p>6,800 Lps.</p>
+
+ <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el botón de compra */
+        .boton-compra {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-compra:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type=text], input[type=email], select {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los iconos */
+        .icono {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botón de compra -->
+<button class="boton-compra" onclick="mostrarModal()">Comprar</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2>Formas de Pago</h2>
+        <form id="paymentForm" onsubmit="return validarFormulario()">
+            <label for="formaPago">Selecciona una forma de pago:</label>
+            <select id="formaPago" name="formaPago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+
+            <!-- Campos de datos según la forma de pago seleccionada -->
+            <div id="datosTarjeta" style="display: none;">
+                <label for="numeroTarjeta"><i class="fas fa-credit-card icono"></i>Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+
+                <label for="nombreTitular"><i class="fas fa-user icono"></i>Nombre del Titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" placeholder="Nombre en la tarjeta">
+
+                <label for="fechaExpiracion"><i class="far fa-calendar-alt icono"></i>Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+
+                <label for="codigoSeguridad"><i class="fas fa-lock icono"></i>Código de Seguridad:</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="CVC">
+            </div>
+
+            <div id="datosPayPal" style="display: none;">
+                <label for="correoPayPal"><i class="fab fa-paypal icono"></i>Correo Electrónico PayPal:</label>
+                <input type="email" id="correoPayPal" name="correoPayPal" placeholder="Ingrese su correo de PayPal">
+            </div>
+
+            <div id="datosTransferencia" style="display: none;">
+                <label for="numeroCuenta"><i class="fas fa-university icono"></i>Número de Cuenta:</label>
+                <input type="text" id="numeroCuenta" name="numeroCuenta" placeholder="Ingrese el número de cuenta">
+            </div>
+
+            <input type="submit" value="Pagar">
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script>
+    // Mostrar modal
+    function mostrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Cerrar modal
+    function cerrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Mostrar campos de acuerdo a la forma de pago seleccionada
+    document.getElementById('formaPago').addEventListener('change', function() {
+        var formaPago = this.value;
+        var campos = document.querySelectorAll('#datosTarjeta, #datosPayPal, #datosTransferencia');
+
+        campos.forEach(function(campo) {
+            campo.style.display = 'none';
+        });
+
+        if (formaPago === 'tarjeta') {
+            document.getElementById('datosTarjeta').style.display = 'block';
+        } else if (formaPago === 'paypal') {
+            document.getElementById('datosPayPal').style.display = 'block';
+        } else if (formaPago === 'transferencia') {
+            document.getElementById('datosTransferencia').style.display = 'block';
+        }
+    });
+
+    // Validar formulario antes de enviar
+    function validarFormulario() {
+        var formaPago = document.getElementById('formaPago').value;
+
+        if (formaPago === 'tarjeta') {
+            var numeroTarjeta = document.getElementById('numeroTarjeta').value;
+            var nombreTitular = document.getElementById('nombreTitular').value;
+            var fechaExpiracion = document.getElementById('fechaExpiracion').value;
+            var codigoSeguridad = document.getElementById('codigoSeguridad').value;
+
+            if (numeroTarjeta.trim() === '' || nombreTitular.trim() === '' || fechaExpiracion.trim() === '' || codigoSeguridad.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+                return false;
+            }
+        } else if (formaPago === 'paypal') {
+            var correoPayPal = document.getElementById('correoPayPal').value;
+
+            if (correoPayPal.trim() === '') {
+                alert('Por favor, ingrese su correo electrónico de PayPal.');
+                return false;
+            }
+        } else if (formaPago === 'transferencia') {
+            var numeroCuenta = document.getElementById('numeroCuenta').value;
+
+            if (numeroCuenta.trim() === '') {
+                alert('Por favor, ingrese el número de cuenta para la transferencia.');
+                return false;
+            }
+        }
+
+        alert('¡Pago realizado con éxito!');
+        cerrarModal();
+        return false;
+    }
+</script>
+</div>
+
+
+
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen con texto</title>
+  <style>
+    .container {
+      text-align: center; /* Para centrar el contenido */
+    }
+    .container img {
+      display: block; /* Para que la imagen ocupe todo el ancho disponible */
+      margin: 0 auto; /* Para centrar la imagen */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://falabella.scene7.com/is/image/FalabellaPE/117641228_1?wid=800&hei=800&qlt=70" alt="Piano">
+  <p>9,100 Lps.</p>
+
+ <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el botón de compra */
+        .boton-compra {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .boton-compra:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para los campos del formulario */
+        input[type=text], input[type=email], select {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los iconos */
+        .icono {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botón de compra -->
+<button class="boton-compra" onclick="mostrarModal()">Comprar</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Contenido del modal -->
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h2>Formas de Pago</h2>
+        <form id="paymentForm" onsubmit="return validarFormulario()">
+            <label for="formaPago">Selecciona una forma de pago:</label>
+            <select id="formaPago" name="formaPago">
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+
+            <!-- Campos de datos según la forma de pago seleccionada -->
+            <div id="datosTarjeta" style="display: none;">
+                <label for="numeroTarjeta"><i class="fas fa-credit-card icono"></i>Número de Tarjeta:</label>
+                <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+
+                <label for="nombreTitular"><i class="fas fa-user icono"></i>Nombre del Titular:</label>
+                <input type="text" id="nombreTitular" name="nombreTitular" placeholder="Nombre en la tarjeta">
+
+                <label for="fechaExpiracion"><i class="far fa-calendar-alt icono"></i>Fecha de Expiración:</label>
+                <input type="text" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA">
+
+                <label for="codigoSeguridad"><i class="fas fa-lock icono"></i>Código de Seguridad:</label>
+                <input type="text" id="codigoSeguridad" name="codigoSeguridad" placeholder="CVC">
+            </div>
+
+            <div id="datosPayPal" style="display: none;">
+                <label for="correoPayPal"><i class="fab fa-paypal icono"></i>Correo Electrónico PayPal:</label>
+                <input type="email" id="correoPayPal" name="correoPayPal" placeholder="Ingrese su correo de PayPal">
+            </div>
+
+            <div id="datosTransferencia" style="display: none;">
+                <label for="numeroCuenta"><i class="fas fa-university icono"></i>Número de Cuenta:</label>
+                <input type="text" id="numeroCuenta" name="numeroCuenta" placeholder="Ingrese el número de cuenta">
+            </div>
+
+            <input type="submit" value="Pagar">
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<script>
+    // Mostrar modal
+    function mostrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
+    }
+
+    // Cerrar modal
+    function cerrarModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
+    }
+
+    // Mostrar campos de acuerdo a la forma de pago seleccionada
+    document.getElementById('formaPago').addEventListener('change', function() {
+        var formaPago = this.value;
+        var campos = document.querySelectorAll('#datosTarjeta, #datosPayPal, #datosTransferencia');
+
+        campos.forEach(function(campo) {
+            campo.style.display = 'none';
+        });
+
+        if (formaPago === 'tarjeta') {
+            document.getElementById('datosTarjeta').style.display = 'block';
+        } else if (formaPago === 'paypal') {
+            document.getElementById('datosPayPal').style.display = 'block';
+        } else if (formaPago === 'transferencia') {
+            document.getElementById('datosTransferencia').style.display = 'block';
+        }
+    });
+
+    // Validar formulario antes de enviar
+    function validarFormulario() {
+        var formaPago = document.getElementById('formaPago').value;
+
+        if (formaPago === 'tarjeta') {
+            var numeroTarjeta = document.getElementById('numeroTarjeta').value;
+            var nombreTitular = document.getElementById('nombreTitular').value;
+            var fechaExpiracion = document.getElementById('fechaExpiracion').value;
+            var codigoSeguridad = document.getElementById('codigoSeguridad').value;
+
+            if (numeroTarjeta.trim() === '' || nombreTitular.trim() === '' || fechaExpiracion.trim() === '' || codigoSeguridad.trim() === '') {
+                alert('Por favor, complete todos los campos.');
+                return false;
+            }
+        } else if (formaPago === 'paypal') {
+            var correoPayPal = document.getElementById('correoPayPal').value;
+
+            if (correoPayPal.trim() === '') {
+                alert('Por favor, ingrese su correo electrónico de PayPal.');
+                return false;
+            }
+        } else if (formaPago === 'transferencia') {
+            var numeroCuenta = document.getElementById('numeroCuenta').value;
+
+            if (numeroCuenta.trim() === '') {
+                alert('Por favor, ingrese el número de cuenta para la transferencia.');
+                return false;
+            }
+        }
+
+        alert('¡Pago realizado con éxito!');
+        cerrarModal();
+        return false;
+    }
+</script>
+</div>
+</div>
+
+
+    <footer>
+        <div class="social-icons">
+
+<a href="https://www.tiktok.com/es/">
+    <img src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/06/inspiration-behind-new-tiktok-logo.jpg" alt="TikTok" alt="Tik Tok">
+</a>
+
+<a href="https://www.instagram.com/jorgedanielizaguirre/?igsh=MTh6M2Y1cGx3bmJqMQ%3D%3D">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="TikTok" alt="Instagram">
+</a> 
+
+<a href="https://www.facebook.com/?locale=es_LA">
+    <img src="https://freepnglogo.com/images/all_img/1713419166FB_Logo_PNG.png" alt="Facebook" alt="TikTok" alt="Instagram">
+</a> 
+
+<a href="https://twitter.com/?lang=es">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4a6y8M9WPSWOIpkx-XeDBttgxLcV5As2lZfZEuV-ku2k236l7pqNZIFHlftNEKembwzs&usqp=CAU" alt="TikTok" alt="Instagram">
+</a>       
+          
+<a href="https://web.whatsapp.com/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYoNtgWKBwkVkk_dElu2PdVDwznhLcn0baEQ&usqp=CAU" alt="WhatsApp" alt="TikTok" alt="Instagram">
+</a>              
+           
+        </div>
+    </footer>
+</body>
+</html>
+
+

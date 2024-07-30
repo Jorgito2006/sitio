@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos Productos - Tienda de Instrumentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .header:hover {
+            background-color: #222;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            transition: color 0.3s;
+        }
+        .header:hover h1 {
+            color: #ffcc00;
+        }
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 40px);
+            margin-bottom: 40px;
+        }
+        .product:last-child {
+            margin-right: 0;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            display: block;
+            margin: 0 auto 15px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #333;
+        }
+        .product p {
+            text-align: center;
+            color: #666;
+        }
+        .product-content {
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+        .product-content:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            z-index: -1;
+            border-radius: 15px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .product:hover .product-content:before {
+            opacity: 1;
+        }
+        .product:hover .product-content {
+            border-color: #ffcc00;
+        }
+        .product:nth-child(1):hover .product-content:before {
+            background: linear-gradient(45deg, #f8b400, #ffcc00);
+        }
+        .product:nth-child(2):hover .product-content:before {
+            background: linear-gradient(45deg, #ff6b6b, #ffcc00);
+        }
+        .product:nth-child(3):hover .product-content:before {
+            background: linear-gradient(45deg, #48dbfb, #ffcc00);
+        }
+        .product:nth-child(4):hover .product-content:before {
+            background: linear-gradient(45deg, #ff9f43, #ffcc00);
+        }
+        .product:nth-child(5):hover .product-content:before {
+            background: linear-gradient(45deg, #ff6b81, #ffcc00);
+        }
+        .product:nth-child(6):hover .product-content:before {
+            background: linear-gradient(45deg, #1dd1a1, #ffcc00);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Nuevos Productos - LATIDEIN</h1>
+</div>
+
+<div class="container">
+    <div class="product">
+        <div class="product-content" style="border: 2px solid #f8b400;">
+            <img src="https://f.fcdn.app/imgs/2ca8bf/www.palaciodelamusica.com.uy/pmusuy/01d9/original/catalogo/V160-V160_1/460x460/violin-valencia-v160-4-4-con-estuche-violin-valencia-v160-4-4-con-estuche.jpg" alt="Producto 1">
+            <h2>Producto 1 - Violin Valencia V160 4/4</h2>
+            <p>Violin de Estudio
+<BR>
+ 4/4
+<BR>
+ t:Abeto,
+<BR>
+ Clav y Diap: Arce, c/Arco
+<BR>
+ Resina
+<BR>
+ c/estuche Liviano</p>
+            <p>Precio: L 4,888.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-content" style="border: 2px solid #ff6b6b;">
+            <img src="https://ultramaraudio.com/wp-content/uploads/2022/12/55448_GCA5000B_OSCases_rear-600x600.jpg" alt="Producto 2">
+            <h2>Producto 2 - Case Para Guitarra Acustica</h2>
+            <p>MATERIAL DEL INTERIOR: FELPA
+MATERIAL DEL EXTERIOR: VINILO TEXTURIZADO 
+LAS DIMENSIONES INTERIORES:
+LONGITUD: 111,5 CM
+ANCHO SUPERIOR: 31,5
+CINTURA: 29 CM
+ANCHO INFERIOR: 39 CM
+PROFUNDIDAD: 12,5 CM </p>
+            <p>Precio: L 3,795.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-content" style="border: 2px solid #48dbfb;">
+            <img src="https://www.casainstrumental.com/wp-content/uploads/2022/10/971113221.png" alt="Producto 3">
+            <h2>Producto 3 - Guittara Acustica FA-125</h2>
+            <p>COLOR NATURAL
+DIAPASÓN NOGAL
+INCRUSTACIONES DE POSICIÓN PUNTO BLANCO
+GOLPEADOR NEGRO DE 1 CAPA
+FORMA DEL CUERPO DREADNOUGHT
+MATERIAL DEL CUELLO NATO
+NÚMERO DE TRASTES 20
+INCLUYE FORRO</p>
+            <p>Precio: L 6,038.00</p>
+        </div>
+    </div>
+    
+    <div class="product">
+        <div class="product-content" style="border: 2px solid #ff9f43;">
+            <img src="https://almacenpajaroazul.com/img/p/3/3/5/335-large_default.jpg" alt="Producto 4">
+            <h2>Producto 4 - Bajo Electrico 4to(Negro)</h2>
+            <p>COLOR NEGRO 
+<BR>
+CUERPO DE CAOBA
+<BR>
+MÁSTIL DE ARCE DE ACCIÓN RÁPIDA
+<BR>
+DIAPASÓN DE PALISANDRO
+<BR>
+24 TRASTES
+<BR>
+2 VOLUMEN Y 1 TONO
+<BR>
+NO INCLUYE FORRO</p>
+            <p>Precio: L 9,194.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-content" style="border: 2px solid #ff6b81;">
+            <img src="https://almacenpajaroazul.com/img/p/2/3/4/1/2341-large_default.jpg" alt="Producto 5">
+            <h2>Producto 5 - Amplificador de Audio 40W </h2>
+            <p>AMPLIFICADOR DE 40 WATTS
+<BR>
+ALIMENTACIÓN DE 12V
+<BR>
+2 ENTRADAS DE MICRÓFONO TIPO 1/4  JACK
+<BR>
+ENTRADA AUXILIAR TIPO 1/4  JACK
+<BR>
+LECTOR USB, SD, CONEXIÓN BLUETOOTH Y FM
+<BR>
+SIRENA</p>
+            <p>Precio: L 2,760.00</p>
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-content" style="border: 2px solid #1dd1a1;">
+            <img src="https://almacenpajaroazul.com/img/p/2/8/2/8/2828-large_default.jpg" alt="Producto 6">
+            <h2>Producto 6 - Teclado 76 Teclas con USB</h2>
+            <p>622 VOCES DE ALTA CÁLIDAD.
+ <BR>
+205 ESTILOS DE AUTO ACOMPAÑAMIENTO.
+<BR>
+150 TIPOS DE ARPEGIO.
+<BR>
+26 TIPOS DE ARMONIZACIÓN.
+<BR>
+USO TO HOST PARA PODER TRANSFERIR DATOS MIDI Y AUDIO
+<BR>.
+NO INCLUYE ADAPTADOR.
+</p>
+            <p>Precio: L 10,925.00</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

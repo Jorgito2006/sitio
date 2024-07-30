@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consulta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555555;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        textarea {
+            resize: none;
+            height: 50px;
+            transition: height 0.3s;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .success-message {
+            text-align: center;
+            color: #4caf50;
+            font-weight: bold;
+            margin-top: 20px;
+            display: none;
+            transition: color 0.5s;
+        }
+        .show {
+            display: block !important;
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Consulta</h1>
+        <div class="success-message" id="successMessage">¡Gracias! Su consulta ha sido enviada correctamente.</div>
+        <form id="consultaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        // Detectar cambios en los campos de texto
+        document.getElementById('nombre').addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+        document.getElementById('mensaje').addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+
+        // Enviar el formulario y mostrar mensaje de éxito
+        document.getElementById('consultaForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Mostrar el mensaje de éxito
+            var successMessage = document.getElementById('successMessage');
+            successMessage.classList.add('show');
+            setTimeout(function() {
+                successMessage.classList.remove('show');
+            }, 5000); // Ocultar el mensaje después de 5 segundos
+        });
+    </script>
+</body>
+</html>

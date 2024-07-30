@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas de Instrumentos</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .instrumento {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .instrumento:hover {
+            transform: translateY(-5px);
+        }
+
+        .instrumento img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .instrumento .contenido {
+            padding: 20px;
+        }
+
+        .instrumento h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .instrumento p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .instrumentos-similares {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Marcas de Instrumentos</h1>
+
+<div class="instrumento" onclick="toggleSimilarInstruments(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuN-xrY4oCP6pAzTIeT0PSMhOUPiIMzMLbXfZ4NHOMnvYVR8a1vy5SRVgq_6tb7R0n6Pw&usqp=CAU" alt="Guitarra">
+    <div class="contenido">
+        <h2>CASIO</h2>
+        <p>La Fender Stratocaster es un icono de la música moderna, utilizada por músicos de todos los géneros.</p>
+    </div>
+</div>
+
+<div class="instrumentos-similares hidden">
+    <div class="instrumento">
+        <img src="https://www.casio.com/content/dam/casio/product-info/locales/es/es/emi/product/G/GP/GP5/GP-510BP/assets/GP-510BP_CASIO_PRODUCTPIC_R.jpg.transform/product-panel/image.jpg" alt="Piano GP-310">
+        <div class="contenido">
+            <h2>Piano GP-310</h2>
+            <p>Otro modelo icónico de Fender, conocido por su sonido distintivo y su versatilidad.</p>
+        </div>
+    </div>
+    <div class="instrumento">
+        <img src="https://m.media-amazon.com/images/I/5131TT5T93L._AC_UF1000,1000_QL80_.jpg" alt="Guitarra">
+        <div class="contenido">
+            <h2>Bateria LD-80</h2>
+            <p>La Jaguar es una guitarra única que ofrece un tono rico y una gran variedad de sonidos.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleSimilarInstruments(element) {
+        var similares = element.nextElementSibling;
+        similares.classList.toggle('hidden');
+    }
+</script>
+
+
+
+
+
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .instrumento {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .instrumento:hover {
+            transform: translateY(-5px);
+        }
+
+        .instrumento img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .instrumento .contenido {
+            padding: 20px;
+        }
+
+        .instrumento h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .instrumento p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .instrumentos-similares {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="instrumento" onclick="toggleSimilarInstruments(this)">
+    <img src="https://brandlogos.net/wp-content/uploads/2013/01/boss-music-logo-vector-400x400.png" alt="Guitarra">
+    <div class="contenido">
+        <h2>BOSS</h2>
+        <p>La Fender Stratocaster es un icono de la música moderna, utilizada por músicos de todos los géneros.</p>
+    </div>
+</div>
+
+<div class="instrumentos-similares hidden">
+    <div class="instrumento">
+        <img src="https://tecnimusic.com.co/wp-content/uploads/2021/11/Bateria-Boss-Junior-1046-5-Piezas.jpg" alt="Guitarra">
+        <div class="contenido">
+            <h2>Bateria Boss Junior 1046 5 Piezas</h2>
+            <p>Otro modelo icónico de Fender, conocido por su sonido distintivo y su versatilidad.</p>
+        </div>
+    </div>
+    <div class="instrumento">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2kDMxqkwqH3YR8zkf2c-pJ_PuCDLtmgwttoBtlfj-9DJUojHchB9Iz5huIYS1QN9M04&usqp=CAU" alt="Guitarra">
+        <div class="contenido">
+            <h2>Boss Dual Cube LX</h2>
+            <p>La Jaguar es una guitarra única que ofrece un tono rico y una gran variedad de sonidos.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleSimilarInstruments(element) {
+        var similares = element.nextElementSibling;
+        similares.classList.toggle('hidden');
+    }
+</script>
+
+
+
+
+
+<style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .instrumento {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .instrumento:hover {
+            transform: translateY(-5px);
+        }
+
+        .instrumento img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .instrumento .contenido {
+            padding: 20px;
+        }
+
+        .instrumento h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .instrumento p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .instrumentos-similares {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="instrumento" onclick="toggleSimilarInstruments(this)">
+    <img src="data:image/png;base64,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" alt="YAMAHA">
+    <div class="contenido">
+        <h2>YAMAHA</h2>
+        <p>La Fender Stratocaster es un icono de la música moderna, utilizada por músicos de todos los géneros.</p>
+    </div>
+</div>
+
+<div class="instrumentos-similares hidden">
+    <div class="instrumento">
+        <img src="data:image/jpeg;base64,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" alt="Guitarra">
+        <div class="contenido">
+            <h2>Guitarra Fender Telecaster</h2>
+            <p>Otro modelo icónico de Fender, conocido por su sonido distintivo y su versatilidad.</p>
+        </div>
+    </div>
+ 
+
+<script>
+    function toggleSimilarInstruments(element) {
+        var similares = element.nextElementSibling;
+        similares.classList.toggle('hidden');
+    }
+</script>
+
+    <div class="instrumento">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVEhQTFBUUFRIXDhUSFRcaFBEaGhgbGhcYGhcYFxgbICwlHB0rHhcaJTYlKS4wMzMzGiRGSzkzPSwzMzABCwsLEA4QHhISHjIqJCkyMjUyMjIyMjQyMjIyMDIyMjIyMjIyMjIyMjIyMDIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAPYAzQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xABBEAACAQIDBAYFCgQGAwAAAAAAAQIDEQQSIQUxQVEGEyJhcYEHMpGhsRQjM0JSYnKCktFDc6KyJDSTweHwU8LD/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAQFAQIDBv/EAC8RAAICAQEECQUAAwEAAAAAAAABAgMRBBIhMVEFEzJBYXGx0fAigZGhwTTh8TP/2gAMAwEAAhEDEQA/AOzAAAAAAAAAAAAAAAGq2/tmlhKMqtRrlCN0nOVrqMeb0Nqcu9J2E+dU1FvNGkrpNu96scvvVku/TiaWS2Vk6VQUpYZZ2Z0+xcazq14qeGnPLkiorq92sJJXlZX0lv5o6dg8XTqwVSnOM4SV4yi7p/8AeR89xm7JK+WXaS58NDpnoqrfN4inf69OotVrmjKLa/00cq5vOGd76opbSOggAkEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAplufgQDp3gnGmquaWbJOXrPLGcHGcLL7TWn5ebd+gkY6U7NlUpSk5yUc8YuKdk4SbTTt+KP6TleswZ1pliaOb7axlOVanXpU4U1CpqoxUVnhKNS9lxbd795MeiU4vH1UqcaSVOtBQjfLelWUHLub6xu25Znv3kR2moTwdG0IxnClDrJq/bs5YbtLdmvSWvd4Ek2HXhPaFCShkcqeafak+slVoRr59X2buMdFp2XzOS7X3RJn2fs1+DpAAJRBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqtt4epOlJQnktBvde7Wtmn3J+bW+1ntTxmGk1hmU8PJxzDTpzw9SioqUuvrRp1FKVlDszhmjuacpVGn9xmw2O4TezpxVpJ0aU5Zn2ssZ00kuDUbq6+0i9tvo2sPiZKnOnToVqVkp1acMrUvnI08zTdqcp2tuza9/mwqFOFekp18Il8ohPJHE0JNN5qijFJ3fanCKXFanDYfBkpzi1nPzB08AEgiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPvSgm54Kyb1xL0/lIgWBozWMoPJKyr0HfLK2kKP7E79KdRxeDak4v/ABe5tXtRvb3X8jn8cTNYun25WVenpnfBUluv/wBuDKPoMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAc79KtaUPksozlB5cYrxk4v6Bveu+KfkiBVsdV+UpdbUt11rdbUt69Nbrk99KsqiWFdJ1FLq8Z6jmn9Bp6uvrZfO3GxCcbPGdc2ninHrnudfLbrYctLWT8jDMo70ADJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5x6Wqc5RwyjfN1eN3SS06i3G3Frj/xA9o4SbqXeT6VvWpRX8Xk5dxOPS7FP5KnKMV1OO1kpNf5f7qb7/J8bJwfF0abqa1YL5yX1a3/nq/c7reXmas2R9AQ3LwRWWcK+xD8Efgi8bGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzT0uuP8AhVNSa6nHO0ZRi7rD23tPg5cOJBMTOl1nqVPpKn8anwxOI4dXzT48uV3PvStCblhVTgpy+T4/TJGf8BW0kml2nFeduJCcZGvGpJ2ox7VR6rBwf0+Ja9az3ZX5vjc1Zsjuuz3ejTfOlB/0oyTE2Y/mKX8mHL7K5aGWbGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAKZSSV27JbwCowNrbQjQp55W1moxTdrt3dr+CYqbUpLRPM+7d7SNdM8Vnw0ZLJGMK8ZvNNRTWWUdG7JvtLTxNW9xvGO9ZI16S8fSrywus4xWFxzdoRk05UGmtZJbk9b8ud1EcdPDqUm+tetZ+tTh/FxjfCXHN7u82G18YpypWlCDjhsZdzg3H6CVst4ST56cE+dnjY/EzTaWJjBWq+osTF/SYr7FNbrLj9XwbwpJrKMyjsvDO4bEaeFw7W54ak1rf6keOlzYEM2R0xw0aVKE+tTjThTc3DMpOMUnJZW5Wdr6q5J8BtClWjnpVIzjezyvc+Ulvi+5iNkJdlpmJ1ThvkmjMABuaAAAAAAAAAAAAAAAAAAAAAAAAGPjMVTpQlUqSUKcY5pSbskiEY7pRSqy0q0sv1YdZH2vm/gYvpb2nKMKGGi7KblVqd6hZQT7rtvxijmSnz3biNbY08ImUVLZ2mdGxu2HFKNLLKpJXT0lGK3ZpW367lxs+TNPO8pZ5uU5/bk7vwXCK7opLuPMJQywWlnZO3LTSPktO/V72zIyFJqtTK2Wyn9Pr4+3dgvNLp41Laa+r08PfvyaXaSfWU9KT/AMNi/pJJR+h75K/fv0v4qztF6r5zCx7NTfRz/wAStxVGfP23565W2ElOm31a+Yxfrqo19DwUE3fxW6/GxjY2pBNXqUF9ItMPCT9epu6ymufPnzLbQf8AhH7+rKbpH/Il9vRGyoRvFO6em+Ksn4Kysu6yM3BV50pqpTk4TXFcV9mS+tHufx1LeDheEXvvG98sY3/KtF4IyY0imsTjY2ub9S9g1KpJ8Gl6HSNhbTWIoqdss08lSN75ZpJtJ8mmmu5o2hBehlZxryp/VnRb/NTay28pz/SidHoNPb1tak+Peea1NSqtcFw7vIAA7nAAAAAAAAAAAAAAAAAAAAAA416V5t4+K4LB07ec6rZDaMM1SlHhKvTT/Wr/AAOg+l7BNVsPXS0nSlRk++Es8V5qcv0nPI1Msqc/s1qc34KSb91yFbF5aRZUSWwie5SpQLyplrHzdOlOa9ZRtH8TajH3tFIoZwXTlg0e0a+etGFNVG4UcSpOFKFTV07WtJrLZ27S4u3F2s43aFnGKqV03OotMRCivX701xNPjJXqQhvXU13rr/CqRtfn2W2+N0Wtq74fzJe+VL9y/wBNDZqS+cWee1ctq6T+cETHYuMU/m5aTUVJN1I1My0u3OOkpJvXx8bbGvUjDvly/chOwsS8tKSdpRcI/wBMLvzhUS8r82ShlPq/pseO/Jd6P6615L0N70ScpYym+Uaj8sjXxaOjkC6CYa9epU+zQUV41JX/APl7yelroE1Ss9+fUqOkpJ6hpdyS/QABMIAAAAAAAAAAAAAAAAAAAAABEvSXglU2dUlbtUpwrR7rSyy/olI4hJXTXPQ7305kls/ErjOn1a8ZyUf97+Rwmrh5x3rz4ES/tIsNJvg0+ZPNhYnrcPSm/WyZZfii8sver+Ze2vSzUKiXBRnp9yUZv3RNR0Kb6mquCxLt+iF/eb6tXUdN75fuVVuIzb8S1rTnBLwOfV6LWIi3udKqvPq6j/tkveY+098fx39vyX9yTSwLU9zcHGdrK6SyS7Mkte5SXu4244OOaMow7V1ZqM5NdnDbnJ5Y7lq9Va6d0yxp1K6vPIrb9JLrN3ea7ZOCcY0qbVpWhKone6lli5R7rQpxv95tcyTqJjYPC5NXbM4RXdFZY6J8dVv7kZVio1Fu3PJdaarq4JE46EUEsNKXGdeT/SlC3ti35kmIr0HxSdKpRe+nUzrvjPW/61P3cyVF/psdTHHJHmtUn188836gAHcjgAAAAAAAAAAAAAAAAAAA1XSHakcLhqlZ2bjG0F9qctIR9rXlcw3gyk28Ih3Tva3WVVh4vsU3eXfNrd5J28W+REpxjve7iYXyublKTk5OUnKTfFt3k/a7mRhZ9bNL6sLTl4/Uj/v5LmVllqeZMua6dlKC+fOPkbjApUqapwVm25yf3pO7S9tvIqKUipMqZzc3llvXWoLZiXaO9eD+DK58PL+2kW6T7S8H8GXJPReXwpm0Ow/nI1fb+3uWWvgjwqfDwKDk+J2Rm7JxzoVoVfqq8ZrnCVs3sspeMUdOjJNXWqaunzOSE86HY3Ph8kn2qUsn5HrT8krx/IW3Rl3Gt+a/vv8AkpelqOFq8n/Pb8EiABblIAAAAAAAAAAAAAAAAAADm/pUx/aoYZPnWmvbCn/7nSDhnTrEue0q7e6E4wj3KMIq36sz8zje/oJGljmzPI1M6iSbe5K7N1seg40Yt+tP5yXc5apeSsiPNdY4U+E6sYPw3y/pTJcyk1U8JR5/EX+mjmTfL+8fniVHsSlMje0OkdSFSdOFOPZm43bbvZ2vZWscKqZ3NqBIuvhSszZK6T7S8/gVzaSXgv7aZGNgbSq1ZTc27Qg5diVCmvUqSUXKpK931btZS3O9kjaShGXZXzjXYdpYyrLsww+tqMKcdVK++2q5vLYV9H2bOG1+2VtnSdSllJ/r3MudaPFpKz3tfakWaeKpTbjGcJSSu0pRbtz0fejUbW2ROrGnJRytSksrw1OlNay1cnUnOS/Fbf36XNibKnRnKUuMMu9c0+Bxu0ddcW3Pfy3L/Z2o1tlsklXuffvNyiRdDauXEOPCdBrxcWnH3OftI/Y2/Rf/ADdHxqX/ANKZx0csXRxzJOtipaeafL03nRgAekPJgAAAAAAAAAAAAAAAAAA5P0n2HSniq0nnjN1ZSbUlZ5tdVJPnwsdYIb0pwD63Ot04p+aVn7kvaayWVhnSuWy9xziGx+qxFGefPFyqJdmzTyStfXXS5t2VbUpuPVye6NeN3+NSpr3zRSUPSMdm1eX9Z6Lo6W1W+ef4v4VGsnsSg5ynKMpSlNyfakldu73WNkj0hRtnDstryZMnVCfaSfmi1g8LGnd011bkrScdG1ZpXfhKXtZkVM0tJSb/ABSlL4s9TBq7bHucn+WbKqEXlJfhCMUlojw9PLmsTcEi6GYfNXlPhGk/bJ2XuUiOnQOi2B6ugpSVpVHnfNL6q9mv5mWPR9Tnbtdy3+3zwK7pO5Qpce+W73/Xqb0AHoDzIAAAAAAAAAAAAAAAAAAMTHYaM4OMvFPkzKZi4idgCG7X2W3CdOS0lFxuu/dJd63+KItSk7NSspxlkmuUlv8AJpprukif43Esi22MNGbVSnanVStezyzS1yzW/i7Naq/FXTh6zS9fDdxXAn6HVqif1cHx9zWoqKItr1ouD47nHxUlpbxs+5Fa17zztkJVvE1jzPS12RsWYNPyLisChFy3mc0m3hb/ACN21FZe48CK4wb7u9/sbbZ9GnFqTWZ77y3LwW74k6no66x71srx9ivv6SprW57T8PfgZXR3YWeSq1V2FrCL3zfBtfY+PhvnFzSYTFNm1pSL+mmNMdmP/Tz198757Uy+ADqcQAAAAAAAAAAAAAAAAADxmNXjc9ABqMXhkzV1sCgADEqbOXMsT2VF77PxVzwGUMHi2XFbrLwRUtnLmAYTDRdhgFzMyhg0gADb4OjY29JAAF8AAAAAAAAAAAH/2Q==" alt="Guitarra">
+        <div class="contenido">
+            <h2>Guitarra Fender Jaguar</h2>
+            <p>La Jaguar es una guitarra única que ofrece un tono rico y una gran variedad de sonidos.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleSimilarInstruments(element) {
+        var similares = element.nextElementSibling;
+        similares.classList.toggle('hidden');
+    }
+</script>
+
+
+
+
+<style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .instrumento {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .instrumento:hover {
+            transform: translateY(-5px);
+        }
+
+        .instrumento img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .instrumento .contenido {
+            padding: 20px;
+        }
+
+        .instrumento h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .instrumento p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .instrumentos-similares {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="instrumento" onclick="toggleSimilarInstruments(this)">
+    <img src="https://cdn.iconscout.com/icon/free/png-128/free-fender-1-283080.png?f=webp" alt="YAMAHA">
+    <div class="contenido">
+        <h2>FENDER</h2>
+        <p>La Fender Stratocaster es un icono de la música moderna, utilizada por músicos de todos los géneros.</p>
+    </div>
+</div>
+
+<div class="instrumentos-similares hidden">
+    <div class="instrumento">
+        <img src="https://musichall.com.py/tienda/wp-content/uploads/2020/08/Vintera_60s_Stratocaster_Pau_Ferro_Fingerboard_3-Color_Sunburst_grande.jpg" alt="Guitarra">
+        <div class="contenido">
+            <h2>Fender Guitarra Electrica Vintera 60s Stratocaster</h2>
+            <p>Otro modelo icónico de Fender, conocido por su sonido distintivo y su versatilidad.</p>
+        </div>
+    </div>
+ 
+
+<script>
+    function toggleSimilarInstruments(element) {
+        var similares = element.nextElementSibling;
+        similares.classList.toggle('hidden');
+    }
+</script>
+
+    <div class="instrumento">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_696507-MLA70722793799_072023-O.webp=" alt="Guitarra">
+        <div class="contenido">
+            <h2>Fender Starcaster Drum Set</h2>
+            <p>La Jaguar es una guitarra única que ofrece un tono rico y una gran variedad de sonidos.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleSimilarInstruments(element) {
+        var similares = element.nextElementSibling;
+        similares.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>
